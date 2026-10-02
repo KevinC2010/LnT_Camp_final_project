@@ -1,6 +1,6 @@
 # LnT Camp 2026 Final Project — Product Profitability Predictor
 
-Proyek ini bertujuan membantu pengelola bisnis retail mengevaluasi profitabilitas produk secara lebih cepat dan terukur menggunakan Machine Learning, dibangun di atas dataset **Global Superstore**. Proyek ini dibuat sebagai bagian dari Final Project LnT Camp 2026, dengan tema *"Bridging the Gap: Empowering Future Talent through Machine Learning for Industry Innovation"*.
+Proyek ini bertujuan membantu pengelola bisnis retail mengevaluasi profitabilitas produk secara lebih cepat dan terukur menggunakan Machine Learning, dibangun di atas dataset **Global Superstore**. Proyek ini dibuat sebagai bagian dari Final Project LnT Camp 2026, dengan tema _"Bridging the Gap: Empowering Future Talent through Machine Learning for Industry Innovation"_.
 
 ## Modelling Tasks
 
@@ -50,7 +50,7 @@ python main.py
 
 Backend akan berjalan di `http://localhost:8000`. Dokumentasi interaktif tersedia di `http://localhost:8000/docs`.
 
-> **Catatan:** Backend tidak dideploy publik dan dijalankan secara lokal saat demo, sesuai ketentuan guideline *("The backend does not need to be publicly deployed — it may run locally during the demo")*.
+> **Catatan:** Backend tidak dideploy publik dan dijalankan secara lokal saat demo, sesuai ketentuan guideline _("The backend does not need to be publicly deployed — it may run locally during the demo")_.
 
 ### 3. Frontend (Streamlit)
 
@@ -62,15 +62,15 @@ streamlit run app.py
 
 Buka `http://localhost:8501` di browser. Pastikan **backend sudah berjalan terlebih dahulu** di terminal terpisah sebelum membuka frontend.
 
-**Frontend yang sudah dideploy (publik):** `<LINK_STREAMLIT_CLOUD_KAMU>`
+**Frontend yang sudah dideploy (publik):** `https://lnt-camp-profitability-predictor.streamlit.app`
 
 > **Penting:** Karena backend dijalankan secara lokal (lihat catatan di atas), versi frontend yang dideploy di Streamlit Cloud **tidak dapat terhubung ke backend** (keterbatasan arsitektur: server Streamlit Cloud tidak dapat mengakses `localhost` di komputer lain). Link deployed di atas menunjukkan tampilan antarmuka aplikasi. **Untuk mencoba prediksi secara end-to-end**, silakan clone repository ini dan jalankan backend serta frontend secara bersamaan di komputer Anda sendiri, mengikuti langkah 2 dan 3 di atas.
 
 ## Ringkasan Hasil Model
 
-| Model | Metrik Utama | Hasil |
-|---|---|---|
-| Regression | MAE / RMSE / R² | 47,34 / 133,68 / 31,98% |
+| Model          | Metrik Utama            | Hasil                         |
+| -------------- | ----------------------- | ----------------------------- |
+| Regression     | MAE / RMSE / R²         | 47,34 / 133,68 / 31,98%       |
 | Classification | Accuracy / F1 / ROC-AUC | 79% / 0,86 (Profitable) / 83% |
 
 Detail lengkap EDA, proses modelling, dan interpretasi bisnis tersedia di dalam notebook.
